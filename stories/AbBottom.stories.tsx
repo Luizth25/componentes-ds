@@ -2,11 +2,11 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 //Aqui e a storia do nosso componente
 
-import { AbButtom } from '../src';
+import { AbButtom } from '../src/components/AbButtom';
 
 export default {
   //aqui eu digo o nome da pasta aonde vai ficar o componente
-  title: 'Componets/AbBottom',
+  title: 'Components/AbBottom',
   //aqui o nome do componente que estou ultilizando
   component: AbButtom,
   //aqui eu digo o tipo do componente meta
