@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { TAbButtomProps } from '../src/components/AbButtom/types';
 //Aqui e a storia do nosso componente
 
 import { AbButtom } from '../src/components/AbButtom';
@@ -14,7 +15,21 @@ export default {
 
 //o template é um componentStory que recebe uma arrow function que retorna o componente AbBottom renderizado
 //o template base do botao
-const Template: ComponentStory<typeof AbButtom> = () => <AbButtom />;
+const Template: ComponentStory<typeof AbButtom> = args => (
+  <AbButtom {...args} />
+);
 
 //criamos uma const que recebe o template.bind do argumentos
 export const Primario = Template.bind({});
+
+Primario.args = {
+  text: 'Ab Botão Primário',
+  tipo: 'primary',
+} as TAbButtomProps;
+
+export const Secundario = Template.bind({});
+
+Secundario.args = {
+  text: 'Ab Botão Secundario',
+  tipo: 'secondary',
+} as TAbButtomProps;
