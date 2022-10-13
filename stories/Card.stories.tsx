@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Card } from '../src/components/Card';
+import { Card } from '../src';
 
 export default {
   title: 'Components/Card',
@@ -15,4 +15,4 @@ const Template: ComponentStory<typeof Card> = () => (
   </Card>
 );
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});

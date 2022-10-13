@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Tag } from '../src/components/Tag';
+import { Tag } from '../src';
 import { TTagProps } from '../src/components/Tag/types';
 
 export default {
@@ -10,8 +10,8 @@ export default {
 
 const Template: ComponentStory<typeof Tag> = args => <Tag {...args} />;
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 
-Primary.args = {
+Default.args = {
   text: 'tag',
 } as TTagProps;

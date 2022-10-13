@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { TAbButtomProps } from '../src/components/AbButtom/types';
 //Aqui e a storia do nosso componente
 
-import { AbButtom } from '../src/components/AbButtom';
+import { AbButtom } from '../src';
 
 export default {
   //aqui eu digo o nome da pasta aonde vai ficar o componente
@@ -20,16 +20,16 @@ const Template: ComponentStory<typeof AbButtom> = args => (
 );
 
 //criamos uma const que recebe o template.bind do argumentos
-export const Primario = Template.bind({});
+export const Primary = Template.bind({});
 
-Primario.args = {
+Primary.args = {
   text: 'Ab Botão Primário',
   tipo: 'primary',
 } as TAbButtomProps;
 
-export const Secundario = Template.bind({});
+export const Secondary = Template.bind({});
 
-Secundario.args = {
+Secondary.args = {
   text: 'Ab Botão Secundario',
   tipo: 'secondary',
 } as TAbButtomProps;
